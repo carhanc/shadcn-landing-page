@@ -12,29 +12,31 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: "Shadcn - Landing template",
-  description: "Free Shadcn landing page for developers",
+  title: "TD Auto Repair | Sunnyvale Auto Repair Shop",
+  description:
+    "Family-owned TD Auto Repair keeps Sunnyvale drivers on the road with honest diagnostics, expert repairs, and friendly service.",
   openGraph: {
     type: "website",
-    url: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    url: "https://tdautorepair-sunnyvale.com",
+    title: "TD Auto Repair | Sunnyvale Auto Repair Shop",
+    description:
+      "Schedule maintenance, repairs, or diagnostics with TD Auto Repair in Sunnyvale, CA.",
     images: [
       {
-        url: "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
+        url: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
         width: 1200,
         height: 630,
-        alt: "Shadcn - Landing template",
+        alt: "Technician inspecting a vehicle at TD Auto Repair",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "https://github.com/nobruf/shadcn-landing-page.git",
-    title: "Shadcn - Landing template",
-    description: "Free Shadcn landing page for developers",
+    title: "TD Auto Repair | Sunnyvale Auto Repair Shop",
+    description:
+      "Maintenance, repairs, and diagnostics from ASE-certified technicians in Sunnyvale, CA.",
     images: [
-      "https://res.cloudinary.com/dbzv9xfjp/image/upload/v1723499276/og-images/shadcn-vue.jpg",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
     ],
   },
 };

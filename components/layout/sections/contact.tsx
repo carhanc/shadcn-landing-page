@@ -43,7 +43,7 @@ export const ContactSection = () => {
       firstName: "",
       lastName: "",
       email: "",
-      subject: "Web Development",
+      subject: "Oil Change & Inspection",
       message: "",
     },
   });
@@ -52,7 +52,7 @@ export const ContactSection = () => {
     const { firstName, lastName, email, subject, message } = values;
     console.log(values);
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:service@tdautorepair.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my email is ${email}. %0D%0A${message}`;
 
     window.location.href = mailToLink;
   }
@@ -66,11 +66,13 @@ export const ContactSection = () => {
               Contact
             </h2>
 
-            <h2 className="text-3xl md:text-4xl font-bold">Connect With Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Schedule your visit
+            </h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            ipsam sint enim exercitationem ex autem corrupti quas tenetur
+            Have a question about your vehicle or ready to book service? Send us
+            a note and our service team will follow up within one business hour.
           </p>
 
           <div className="flex flex-col gap-4">
@@ -80,7 +82,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Find us</div>
               </div>
 
-              <div>742 Evergreen Terrace, Springfield, IL 62704</div>
+              <div>683 E El Camino Real, Sunnyvale, CA 94087</div>
             </div>
 
             <div>
@@ -89,7 +91,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Call us</div>
               </div>
 
-              <div>+1 (619) 123-4567</div>
+              <div>(408) 735-0541</div>
             </div>
 
             <div>
@@ -98,7 +100,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Mail US</div>
               </div>
 
-              <div>leomirandadev@gmail.com</div>
+              <div>service@tdautorepair.com</div>
             </div>
 
             <div>
@@ -108,15 +110,18 @@ export const ContactSection = () => {
               </div>
 
               <div>
-                <div>Monday - Friday</div>
-                <div>8AM - 4PM</div>
+                <div>Monday – Friday: 8:00 AM – 6:00 PM</div>
+                <div>Saturday: 9:00 AM – 3:00 PM</div>
+                <div>Sunday: Closed</div>
               </div>
             </div>
           </div>
         </div>
 
         <Card className="bg-muted/60 dark:bg-card">
-          <CardHeader className="text-primary text-2xl"> </CardHeader>
+          <CardHeader className="text-primary text-2xl">
+            Request a quote or appointment
+          </CardHeader>
           <CardContent>
             <Form {...form}>
               <form
@@ -131,7 +136,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>First Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Leopoldo" {...field} />
+                          <Input placeholder="First name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -144,7 +149,7 @@ export const ContactSection = () => {
                       <FormItem className="w-full">
                         <FormLabel>Last Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="Miranda" {...field} />
+                          <Input placeholder="Last name" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -162,7 +167,7 @@ export const ContactSection = () => {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="leomirandadev@gmail.com"
+                            placeholder="you@email.com"
                             {...field}
                           />
                         </FormControl>
@@ -189,18 +194,20 @@ export const ContactSection = () => {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">
-                              Web Development
+                            <SelectItem value="Oil Change & Inspection">
+                              Oil Change & Inspection
                             </SelectItem>
-                            <SelectItem value="Mobile Development">
-                              Mobile Development
+                            <SelectItem value="Brake Service">
+                              Brake Service
                             </SelectItem>
-                            <SelectItem value="Figma Design">
-                              Figma Design
+                            <SelectItem value="Diagnostic Appointment">
+                              Diagnostic Appointment
                             </SelectItem>
-                            <SelectItem value="REST API">REST API</SelectItem>
-                            <SelectItem value="FullStack Project">
-                              FullStack Project
+                            <SelectItem value="Air Conditioning Service">
+                              Air Conditioning Service
+                            </SelectItem>
+                            <SelectItem value="Fleet Maintenance Inquiry">
+                              Fleet Maintenance Inquiry
                             </SelectItem>
                           </SelectContent>
                         </Select>
@@ -220,7 +227,7 @@ export const ContactSection = () => {
                         <FormControl>
                           <Textarea
                             rows={5}
-                            placeholder="Your message..."
+                            placeholder="Tell us about your vehicle and what you need help with."
                             className="resize-none"
                             {...field}
                           />

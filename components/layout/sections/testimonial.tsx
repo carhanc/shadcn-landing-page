@@ -26,52 +26,51 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    image: "https://i.pravatar.cc/150?img=12",
+    name: "Samantha K.",
+    userName: "Sunnyvale Resident",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "They diagnosed my check engine light in under an hour and explained exactly what needed to be fixed. Honest, fast, and friendly.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    image: "https://i.pravatar.cc/150?img=32",
+    name: "Miguel R.",
+    userName: "Local Business Owner",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
-    rating: 4.8,
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "TD Auto Repair keeps our delivery vans running. Their fleet maintenance plan saves us downtime every month.",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    image: "https://i.pravatar.cc/150?img=46",
+    name: "Priya S.",
+    userName: "Parent & Commuter",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Appreciated the shuttle ride to work and the photo report on my brakes. Pricing was exactly what they quoted.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    image: "https://i.pravatar.cc/150?img=7",
+    name: "Alex D.",
+    userName: "Subaru Outback Owner",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "I finally found a shop I trust with my AWD. They use OEM parts and stand behind their work.",
+    rating: 4.8,
+  },
+  {
+    image: "https://i.pravatar.cc/150?img=58",
+    name: "Jenna L.",
+    userName: "New Driver",
+    comment:
+      "They walked me through every item on the inspection and never talked down to me. I won’t take my car anywhere else.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    image: "https://i.pravatar.cc/150?img=18",
+    name: "Howard M.",
+    userName: "Classic Car Enthusiast",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "They sourced quality parts for my ’67 Mustang and treated it with care. The attention to detail is unmatched.",
     rating: 4.9,
   },
 ];
@@ -85,7 +84,7 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          Sunnyvale drivers rely on us
         </h2>
       </div>
 
@@ -116,11 +115,10 @@ export const TestimonialSection = () => {
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
-                      <AvatarFallback>SV</AvatarFallback>
+                        <AvatarImage src={review.image} alt={review.name} />
+                        <AvatarFallback>
+                          {review.name.slice(0, 2).toUpperCase()}
+                        </AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">

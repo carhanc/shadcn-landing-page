@@ -11,32 +11,32 @@ interface sponsorsProps {
 
 const sponsors: sponsorsProps[] = [
   {
-    icon: "Crown",
-    name: "Acmebrand",
+    icon: "ShieldCheck",
+    name: "ASE Certified",
   },
   {
-    icon: "Vegan",
-    name: "Acmelogo",
+    icon: "CircleDollarSign",
+    name: "NAPA AutoCare",
   },
   {
-    icon: "Ghost",
-    name: "Acmesponsor",
+    icon: "BadgeCheck",
+    name: "AAA Approved Facility",
   },
   {
-    icon: "Puzzle",
-    name: "Acmeipsum",
+    icon: "Zap",
+    name: "Hybrid & EV Trained",
   },
   {
-    icon: "Squirrel",
-    name: "Acme",
+    icon: "Fuel",
+    name: "BG Products Partner",
   },
   {
-    icon: "Cookie",
-    name: "Accmee",
+    icon: "Car",
+    name: "Warranty Support Network",
   },
   {
-    icon: "Drama",
-    name: "Acmetech",
+    icon: "Settings",
+    name: "Domestic & Import Specialists",
   },
 ];
 
@@ -44,7 +44,7 @@ export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
       <h2 className="text-lg md:text-xl text-center mb-6">
-        Our Platinum Sponsors
+        Certifications & Partners
       </h2>
 
       <div className="mx-auto">

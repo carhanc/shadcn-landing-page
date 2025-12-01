@@ -13,32 +13,33 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "Do you work on European or hybrid vehicles?",
+    answer:
+      "Yes. Our technicians are trained on European, hybrid, and EV platforms with dedicated diagnostic equipment for BMW, Mercedes, Toyota, Tesla, and more.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Can I wait while my car is serviced?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Absolutely. Our lounge has Wi-Fi, refreshments, and workspace seating. For longer jobs we provide a complimentary local shuttle or rideshare credit.",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+    question: "What warranty do you offer on repairs?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "Most repairs include a 24-month/24,000-mile nationwide warranty. We’ll note any exceptions on your estimate before work begins.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "How soon can you see my vehicle?",
+    answer:
+      "Same-day appointments are often available for maintenance. For diagnostics or major repairs, we typically schedule within 1-2 business days.",
     value: "item-4",
   },
   {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+    question: "Do you offer fleet or commercial maintenance?",
+    answer:
+      "Yes. We tailor preventative plans, provide consolidated billing, and prioritize turnaround for local fleet, delivery, and rideshare vehicles.",
     value: "item-5",
   },
 ];
@@ -52,7 +53,7 @@ export const FAQSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold">
-          Common Questions
+          Answers before you arrive
         </h2>
       </div>
 

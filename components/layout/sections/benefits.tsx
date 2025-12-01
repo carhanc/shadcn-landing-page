@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "BadgeCheck",
+    title: "ASE-Certified Crew",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Every technician is ASE-certified and trained on the latest diagnostic technology.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: "Clock3",
+    title: "Same-Day Service",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "From oil changes to brake jobs, we keep most maintenance visits under one business day.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "Receipt",
+    title: "Upfront Estimates",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Know the work, parts, and pricing before we turn a wrench—no surprise add-ons.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "ShieldCheck",
+    title: "Nationwide Warranty",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Repairs backed by a 24-month/24,000-mile warranty honored at shops nationwide.",
   },
 ];
 
@@ -40,15 +40,16 @@ export const BenefitsSection = () => {
     <section id="benefits" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-2 place-items-center lg:gap-24">
         <div>
-          <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
+          <h2 className="text-lg text-primary mb-2 tracking-wider">
+            Why choose TD Auto Repair
+          </h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Confidence every mile
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            From preventative maintenance to complex repairs, we keep Sunnyvale
+            drivers moving with transparent service and dependable workmanship.
           </p>
         </div>
 

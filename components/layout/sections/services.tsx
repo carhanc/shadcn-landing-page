@@ -6,37 +6,39 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-enum ProService {
-  YES = 1,
-  NO = 0,
+enum ServiceHighlight {
+  FEATURED = 1,
+  STANDARD = 0,
 }
 interface ServiceProps {
   title: string;
-  pro: ProService;
+  highlight: ServiceHighlight;
   description: string;
 }
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "Oil Change & 45-Point Inspection",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
-    pro: 0,
+      "Premium oil, OEM filter, fluid top-off, and a full digital inspection in under an hour.",
+    highlight: ServiceHighlight.FEATURED,
   },
   {
-    title: "Social Media Integrations",
+    title: "Brake Repair & Replacement",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
-    pro: 0,
+      "Factory-quality pads and rotors with road-test confirmation and 24-month/24K warranty.",
+    highlight: ServiceHighlight.FEATURED,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
+    title: "Check Engine Light Diagnostics",
+    description:
+      "Advanced scan tools and smoke testing to pinpoint issues before parts are replaced.",
+    highlight: ServiceHighlight.STANDARD,
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
+    title: "A/C Recharge & Repair",
+    description:
+      "Leak detection, recharge, and component replacement to keep you cool year-round.",
+    highlight: ServiceHighlight.STANDARD,
   },
 ];
 
@@ -48,16 +50,16 @@ export const ServicesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
+        Complete auto care in one stop
       </h2>
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
+        Whether you need routine maintenance or complex diagnostics, TD Auto
+        Repair delivers dealership-level expertise with neighborhood service.
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
-        {serviceList.map(({ title, description, pro }) => (
+        {serviceList.map(({ title, description, highlight }) => (
           <Card
             key={title}
             className="bg-muted/60 dark:bg-card h-full relative"
@@ -67,11 +69,11 @@ export const ServicesSection = () => {
               <CardDescription>{description}</CardDescription>
             </CardHeader>
             <Badge
-              data-pro={ProService.YES === pro}
+              data-pro={ServiceHighlight.FEATURED === highlight}
               variant="secondary"
               className="absolute -top-2 -right-3 data-[pro=false]:hidden"
             >
-              PRO
+              Most Popular
             </Badge>
           </Card>
         ))}
